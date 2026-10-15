@@ -34,7 +34,9 @@ Branches allow you to work on new features isolated from the main working code.
 5. Sharing & Syncing with Remote Repositories
 Commands for collaborating with others by pushing or pulling from platforms like GitHub or GitLab.
 • git remote add origin <url> – Connects your local repository to a remote server link.
+  Example: git remote add origin "https://github.com/narenkanasu/Scrum-Master-Prep.git"
 • git push origin <branch-name> – Uploads your local branch commits to the remote repository.
+  Example: git push origin "narenkanasu-patch-1"
 • git pull – Fetches the latest updates from the remote repository and automatically merges them into your active local branch.
 • git fetch – Downloads updates from the remote repository without altering your local working files.
 
