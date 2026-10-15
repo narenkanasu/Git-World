@@ -1,0 +1,36 @@
+To check whether your local folder and GitHub repository are completely in sync, you need to verify two things: if you have uncommitted changes locally, and if your local branch matches the latest updates on GitHub.
+
+1. Check for local uncommitted changes
+Before checking GitHub, see if you have any modified, deleted, or new files in your local folder that haven't been committed yet. 
+Run: git status
+
+• If in sync locally: It will say "nothing to commit, working tree clean".
+• If out of sync locally: It will list untracked or modified files that need to be added (git add) and committed (git commit).
+
+2. Compare your local folder with GitHub
+Git does not automatically look at GitHub in real-time; it uses a local cache of the remote repository. 
+You must download the latest metadata from GitHub first to compare them.
+Run the following commands (replace main with your branch name if it's different):
+bash 
+# 1. Fetch the latest updates from GitHub without changing your files
+git fetch origin
+
+# 2. Check the status comparison
+git status
+
+Understanding the git status output:
+
+• Your branch is up to date with 'origin/main'.
+🎉 Everything is in sync. Your local folder and GitHub match perfectly.
+• Your branch is ahead of 'origin/main' by X commits.
+⚠️ GitHub is behind. You have committed changes locally that you haven't pushed to GitHub yet. (Fix by running git push origin main).
+• Your branch is behind 'origin/main' by X commits.
+⚠️ Your local folder is behind. Someone else (or you, via the web interface) pushed updates to GitHub that you don't have yet. (Fix by running git pull origin main).
+• Your branch and 'origin/main' have diverged.
+⚠️ Both have different changes. You have new commits locally, and there are also new commits on GitHub. You will need to run git pull and resolve any merge conflicts.
+
+3. See exactly what files are different
+If git status tells you that the branches are not in sync, you can view the exact line-by-line file differences before syncing them:
+bash git diff main origin/main
+
+If you want to view these differences visually rather than in the command line, I can guide you on using GitHub Desktop or showing diffs inside VS Code. Would you like to see how to do that
