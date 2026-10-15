@@ -3,19 +3,24 @@ Git is a distributed version control system used to track changes in your source
 1. Setup & Configuration
 Run these commands when configuring Git for the first time on your machine.
 • git config --global user.name "Your Name" – Sets the name linked to your commit history.
+  Example: git config --global user.name "John Doe" 
 • git config --global user.email "you@example.com" – Sets the email linked to your commit history.
+  Example: git config --global user.email "john.doe@email.com"
 • git config --global init.defaultBranch main – Sets main as your default initial branch name.
 
 2. Creating & Cloning Repositories
 • git init – Initializes a brand new, empty Git repository in your current local directory.
 • git clone <url> – Downloads an existing project from a remote host (like GitHub) and copies it locally.
+  Example: git clone "https://github.com/narenkanasu/Scrum-Master-Prep.git"
 
 3. The Staging & Committing Workflow
 This workflow allows you to preview, format, and save your code changes.
 • git status – Shows which files have been modified, staged, or remain untracked.
 • git add <file-name> – Stages a specific file for the next snapshot.
+  Example: git add README.md
 • git add . – Stages all modified and new files in the current directory.
 • git commit -m "Your descriptive message" – Permanently saves your staged changes into the local repository history.
+  Example: git commit -m "First Commit"
 • git diff – Shows the exact line-by-line differences of files that are modified but not yet staged.
 
 4. Branching & Merging
