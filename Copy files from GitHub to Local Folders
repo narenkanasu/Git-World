@@ -1,0 +1,26 @@
+Copy files from GitHub to Local Folders
+
+You can copy files from GitHub to your local system using two primary methods, 
+depending on whether you want to use version control (Git) or just want a one-time copy of the files.
+
+Method 1: Download as a ZIP File (Easiest / No Git Required)
+Use this option if you just want a quick, one-time snapshot of the files and do not need to track changes or update them later.
+1. Go to the main page of the repository on GitHub.
+2. Click the green Code button located near the top right of the file list.
+3. Click Download ZIP.
+4. Locate the downloaded file on your computer and extract the ZIP archive to access the files.
+
+Method 2: Clone the Repository (Recommended for Developers)
+Use this option if you have Git installed and want to copy the entire project along with its history, allowing you to pull future updates or make changes.
+1. On the GitHub repository page, click the green Code button.
+2. Under the HTTPS tab, click the Copy icon to copy the repository URL.
+3. Open your terminal (Mac/Linux) or Git Bash (Windows).
+4. Navigate to the folder where you want to save the project using the cd command:bash cd path/to/your/folder
+5. Type git clone, paste the URL you copied, and press Enter:bash git clone https://github.com
+
+
+Method 3: Download a Single Specific File
+If you do not want the whole repository and only need a single file:
+1. Click on the file inside the GitHub repository to open it.
+2. Click the Raw button in the top right corner of the file view.
+3. Right-click anywhere on the raw text page and choose Save As... (or press Ctrl + S / Cmd + S) to save it to your system.
