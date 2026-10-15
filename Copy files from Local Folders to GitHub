@@ -1,0 +1,17 @@
+Copy files from Local Folders to GitHub
+
+To copy files from your local system to GitHub, you can either upload them directly through the website or use Git commands in your terminal.
+Before you begin, ensure you have created a repository on GitHub (click the "+" icon in the top-right corner, select New repository, give it a name, and leave it empty). 
+Copy the Repository URL provided on the setup page.
+
+Method 1: Using the Terminal / Git Commands (Recommended)
+This is the standard and most reliable method for uploading full project structures or large sets of files.
+1. Open your terminal (or Git Bash on Windows) and navigate to your local folder: Gitbash - cd /path/to/your/local/folder
+2. Initialize Git in your local project folder: git init
+3. Stage all your files to prepare them for the upload: git add .
+4. Commit the files with a descriptive tracking message: git commit -m "Initial commit of local files"
+5. Rename the default branch to match GitHub's default standard (main): git branch -M main
+6. Link your local folder to your remote GitHub repository (replace REMOTE-URL with the URL you copied from GitHub): git remote add origin REMOTE-URL
+7. Push your files up to GitHub: git push -u origin main
+
+Note: You may be prompted to authenticate your GitHub account through your browser or via a Personal Access Token.
